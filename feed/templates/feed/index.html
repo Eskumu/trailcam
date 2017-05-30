@@ -1,0 +1,19 @@
+{% extends 'feed/base.html' %}
+
+{% block content %}
+<div id="pseudopadding">
+{% if latest_photo_list %}
+    <div class="row">
+    {% for photo in latest_photo_list %}
+        <div class="col-md-4 col-sm-6 col-xs-12 tile">
+        <h1>{{ photo.title }}</h1>
+        <p>{{ photo.date }}</p>
+        <div class="postimg" style="background-image: url({{ photo.post_img.url }})"></div>
+        </div>
+    {% endfor %}
+    </div>
+{% else %}
+    <h1>Sorry, no Photos.</h1>
+{% endif %}
+</div>
+{% endblock %}

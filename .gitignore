@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+/media/catche/
+/media/pictures/
+/quickstart_google.py
+/setup.py
+/db.sqlite3
+/client_secret.json
+/feed/migrations/
