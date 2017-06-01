@@ -8,7 +8,9 @@
         <div class="col-md-4 col-sm-6 col-xs-12 tile">
         <h1>{{ photo.title }}</h1>
         <p>{{ photo.date }}</p>
-        <div class="postimg" style="background-image: url({{ photo.post_img.url }})"></div>
+        <a href="{{ photo.post_img.url }}">
+            <img class="img-responsive" src="{{ photo.post_img.url }}">
+        </a>
         </div>
     {% endfor %}
     </div>
