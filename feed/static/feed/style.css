@@ -18,9 +18,3 @@ div.tile {
     background: #f0f1f2 ;
     color: #222222;
 }
-div.postimg{
-    background-size: cover ;
-    height: 300px;
-    margin:0;
-    padding:0;
-}

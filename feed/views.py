@@ -11,7 +11,7 @@ from .email_handler import readmail
 # Create your views here.
 
 def index(request):
-    latest_photo_list = Photo.objects.order_by("uploaded")
+    latest_photo_list = Photo.objects.order_by("-uploaded")
     context = {
         'latest_photo_list': latest_photo_list
     }
